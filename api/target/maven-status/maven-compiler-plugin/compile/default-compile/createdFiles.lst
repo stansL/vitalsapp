@@ -1,0 +1,6 @@
+org\openmrs\module\vitalsapp\api\impl\VitalsServiceImpl.class
+org\openmrs\module\vitalsapp\api\VitalsService.class
+org\openmrs\module\vitalsapp\VitalsActivator.class
+org\openmrs\module\vitalsapp\api\dao\VitalsDao.class
+org\openmrs\module\vitalsapp\Item.class
+org\openmrs\module\vitalsapp\VitalsConfig.class

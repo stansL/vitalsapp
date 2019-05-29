@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vitalsapp.iml" filepath="$PROJECT_DIR$/vitalsapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/vitalsapp-api.iml" filepath="$PROJECT_DIR$/api/vitalsapp-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/omod/vitalsapp-omod.iml" filepath="$PROJECT_DIR$/omod/vitalsapp-omod.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+org\openmrs\module\vitalsapp\page\controller\AdultPatientsPageController$PatientWrapper.class
+org\openmrs\module\vitalsapp\page\controller\AdultPatientsPageController.class
+org\openmrs\module\vitalsapp\fragment\controller\UsersFragmentController.class
+org\openmrs\module\vitalsapp\extension\html\AdminList.class
+org\openmrs\module\vitalsapp\page\controller\PatientVitalsPageController$PatientWrapper.class
+org\openmrs\module\vitalsapp\page\controller\PatientVitalsPageController.class
+org\openmrs\module\vitalsapp\web\controller\VitalsController.class

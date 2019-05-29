@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.openmrs.module:emrapi-api:test-jar:tests:1.18">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openmrs/module/emrapi-api/1.18/emrapi-api-1.18-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openmrs/module/emrapi-api/1.18/emrapi-api-1.18-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openmrs/module/emrapi-api/1.18/emrapi-api-1.18-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module configVersion="1.2">
+	
+	<!-- Base Module Properties -->
+	<id>vitalsapp</id>
+	<name>Vitals</name>
+	<version>1.0.0-SNAPSHOT</version>
+	<package>org.openmrs.module.vitalsapp</package>
+	<author>mstan</author>
+	<description>
+			Test App for collecting vitals
+	</description>
+
+	<activator>org.openmrs.module.vitalsapp.VitalsActivator</activator>
+	
+	<!-- <updateURL>https://modules.openmrs.org/modules/download/vitalsapp/update.rdf</updateURL> -->
+	<!-- /Base Module Properties -->
+	
+	<require_version>1.11.6</require_version>
+
+	<require_modules>
+		<require_module version="2.9">
+			org.openmrs.module.appframework
+		</require_module>
+		<require_module version="3.9">
+			org.openmrs.module.uiframework
+		</require_module>
+		<require_module version="${uicommonsModuleVersion}">
+			org.openmrs.module.uicommons
+		</require_module>
+		<require_module version="1.7">
+			org.openmrs.module.appui
+		</require_module>
+		<require_module version="1.11.1">
+			org.openmrs.module.coreapps
+		</require_module>
+		<require_module version="2.1">
+			org.openmrs.module.uicommons
+		</require_module>
+		<require_module versioon="2.6">
+			org.openmrs.module.webservices.rest
+		</require_module>
+		<require_module versioon="0.10.6">
+			org.openmrs.module.reporting
+		</require_module>
+		<require_module versioon="1.18">
+			org.openmrs.module.emrapi
+		</require_module>
+		<require_module versioon="3.3.0">
+			org.openmrs.module.htmlformentry
+		</require_module>
+	</require_modules>
+	
+	<!-- Extensions -->
+	<extension>
+		<point>org.openmrs.admin.list</point>
+		<class>org.openmrs.module.vitalsapp.extension.html.AdminList</class>
+	</extension>
+
+	<aware_of_modules>
+		<aware_of_module>org.openmrs.module.legacyui</aware_of_module>
+	</aware_of_modules>
+
+
+	<privilege>
+		<name>App: referenceapplication.vitals</name>
+		<description>Able to access the vitals app</description>
+	</privilege>
+
+	<privilege>
+		<name>App: referenceapplication.legacyAdmin</name>
+		<description>Able to access the advanced administration app</description>
+	</privilege>
+
+	<privilege>
+		<name>App: referenceapplication.styleGuide</name>
+		<description>Able to access the style guide app</description>
+	</privilege>
+
+	<privilege>
+		<name>App: referenceapplication.manageApps</name>
+		<description>Able to manage app definitions</description>
+	</privilege>
+	
+	<!-- AOP
+	<advice>
+		<point>org.openmrs.api.FormService</point>
+		<class>org.openmrs.module.vitalsapp.advice.DuplicateFormAdvisor</class>
+	</advice>
+	 /AOP -->
+	
+	
+	<!-- Required Privileges 
+	<privilege>
+		<name>Form Entry</name>
+		<description>Allows user to access Form Entry pages/functions</description>
+	</privilege>
+	 /Required Privileges -->
+
+
+	<!-- Required Global Properties 
+	<globalProperty>
+		<property>vitalsapp.someProperty</property>
+		<defaultValue></defaultValue>
+		<description>
+			A description of the global property goes here.  The description
+			should explain enough for administrators to understand the purpose
+			and possible values for the global property.
+		</description>
+	</globalProperty>
+	/Required Global Properties -->
+	
+	<!--
+	<dwr>
+		<allow>
+			<create creator="new" javascript="DWRFormEntryService">
+				<param name="class" value="org.openmrs.module.vitalsapp.web.DWRFormEntryService"/>
+				<include method="enterForm"/>
+			</create>
+		</allow>
+
+		<signatures>
+			<![CDATA[
+			import org.openmrs.module.vitalsapp.web.DWRFormEntryService;
+			DWRFormEntryService.enterForm(Integer patientId, Integer formId, boolean useEncounter, List<String> fields);
+			]]>
+		</signatures>	
+	</dwr>
+	-->
+	
+	<!-- Servlets -->
+	<!-- Accessed through the url /pageContext()/moduleServlet/<moduleId>/<servlet-name> 
+	<servlet>
+		<servlet-name>formDownload</servlet-name>
+		<servlet-class>org.openmrs.module.vitalsapp.web.FormDownloadServlet</servlet-class>
+	</servlet>
+	-->
+	<!-- /Servlets -->
+	
+	
+	<!-- Internationalization -->
+	<!-- All message codes should start with vitalsapp.* -->
+	<messages>
+		<lang>en</lang>
+		<file>messages.properties</file>
+	</messages>
+	<messages>
+		<lang>fr</lang>
+		<file>messages_fr.properties</file>
+	</messages>
+	<messages>
+		<lang>es</lang>
+		<file>messages_es.properties</file>
+	</messages>
+	<!-- /Internationalization -->
+	
+</module>
+

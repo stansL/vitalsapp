@@ -1,0 +1,2 @@
+org\openmrs\module\vitalsapp\api\VitalsServiceTest.class
+org\openmrs\module\vitalsapp\api\dao\VitalsDaoTest.class
